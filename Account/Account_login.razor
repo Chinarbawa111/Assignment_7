@@ -1,0 +1,24 @@
+@page "/account_login"
+
+<h1>Login</h1>
+
+<input type="text" name="Name"/><br/>
+<input type="password" name="Password" /><button onclick="show()"/><br/>
+<button class="btn btn-primary" onclick="OnLoginCallback()" >login</button>
+
+@code {
+    private int currentCount = 0;
+
+    public Boolean PasswordVisible = false;
+
+    private void show()
+    {
+        
+        PasswordVisible = true;
+    }
+    private void OnLoginCallback()
+    {
+
+    }
+
+}
